@@ -8,77 +8,77 @@
      <script src="https://cdn.lordicon.com/lordicon.js" defer></script>
       <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
      
-     <!-- Estilos forzados para reducir altura de la galería -->
+     <!-- Estilos para reducir altura de la galería solo un 20% -->
      <style>
-         /* Forzar reducción drástica de altura en la sección de galería */
+         /* Reducir altura de la sección de galería solo un 20% */
          .gallery-section {
-             padding: 0.2rem 1rem !important;
+             padding: 3.2rem 1rem !important; /* Reducido de 4rem a 3.2rem (20% menos) */
              margin: 0 !important;
              min-height: auto !important;
-             max-height: 30vh !important;
-             overflow: hidden !important;
+             max-height: 80vh !important; /* Permitir más altura para el contenido */
+             overflow: visible !important; /* Mostrar todo el contenido */
          }
          
          .gallery-section.section-block {
-             padding: 0.5rem 0 !important;
+             padding: 2rem 0 !important; /* Reducido de 2.5rem a 2rem (20% menos) */
              margin: 0 !important;
          }
          
          .gallery-section .gallery-container {
-             padding: 0.1rem 0 !important;
+             padding: 0.8rem 0 !important; /* Reducido de 1rem a 0.8rem (20% menos) */
              margin: 0 !important;
          }
          
          .gallery-section .section-title {
-             margin: 0.1rem 0 0.05rem 0 !important;
+             margin: 0.4rem 0 0.2rem 0 !important; /* Reducido de 0.5rem/0.25rem a 0.4rem/0.2rem (20% menos) */
              padding: 0 !important;
-             font-size: 2.5rem !important;
+             font-size: 3rem !important; /* Tamaño original */
          }
          
          .gallery-section .section-subtitle {
-             margin: 0 0 0.2rem 0 !important;
+             margin: 0 0 0.6rem 0 !important; /* Reducido de 0.75rem a 0.6rem (20% menos) */
              padding: 0 !important;
-             font-size: 0.9rem !important;
+             font-size: 1rem !important; /* Tamaño original */
          }
          
          .gallery-section .animated-camera {
-             margin: 0.2rem 0 !important;
+             margin: 0.8rem 0 !important; /* Reducido de 1rem a 0.8rem (20% menos) */
              padding: 0 !important;
-             transform: scale(0.6) !important;
+             transform: none !important; /* Sin escalado, tamaño original */
          }
          
          .gallery-section .carousel-container {
-             margin: 0 auto 0.2rem !important;
+             margin: 0 auto 0.6rem !important; /* Reducido de 0.75rem a 0.6rem (20% menos) */
              padding: 0 !important;
          }
          
          .gallery-section .carousel-counter {
-             margin: 0.1rem 0 !important;
+             margin: 0.4rem 0 !important; /* Reducido de 0.5rem a 0.4rem (20% menos) */
              padding: 0 !important;
-             font-size: 0.8rem !important;
+             font-size: 1rem !important; /* Tamaño original */
          }
          
          .gallery-section .gallery-ornament {
-             margin-bottom: 2px !important;
+             margin-bottom: 6px !important; /* Reducido de 8px a 6px (20% menos) */
              padding: 0 !important;
-             display: none !important; /* Ocultar completamente para reducir altura */
+             display: block !important; /* Mostrar el ornamento */
          }
          
          .gallery-section .gallery-border {
-             height: 24px !important;
+             height: 48px !important; /* Reducido de 60px a 48px (20% menos) */
          }
          
          .gallery-section .gallery-border svg {
-             height: 24px !important;
+             height: 48px !important;
          }
          
-         /* Reducir altura de las imágenes del carrusel */
+         /* Mantener altura original de las imágenes del carrusel */
          .gallery-section .carousel-item {
-             height: 300px !important;
+             height: 400px !important; /* Tamaño original */
          }
          
          .gallery-section .carousel-item img {
-             height: 300px !important;
+             height: 400px !important; /* Tamaño original */
              object-fit: cover !important;
          }
      </style>
@@ -348,24 +348,24 @@
             </section>
 
             <!-- Photo Gallery -->
-            <section class="gallery-section section-block" style="padding: 1rem 0 !important; margin: 0 !important; min-height: auto !important; max-height: 50vh !important; overflow: hidden !important;">
-                <svg class="gallery-border top" width="100%" height="24" xmlns="http://www.w3.org/2000/svg">
+            <section class="gallery-section section-block">
+                <svg class="gallery-border top" width="100%" height="48" xmlns="http://www.w3.org/2000/svg">
                   <defs>
-                    <pattern id="ornamento-linea-gallery-top" x="0" y="0" width="200" height="24" patternUnits="userSpaceOnUse">
-                      <svg viewBox="0 0 600 24" width="200" height="24">
-                        <path d="M20,12 Q140,10 260,12 Q140,14 20,12 Z" fill="white"/>
-                        <path d="M580,12 Q460,10 340,12 Q460,14 580,12 Z" fill="white"/>
-                        <circle cx="285" cy="12" r="1.5" fill="white"/>
-                        <circle cx="300" cy="12" r="2" fill="white"/>
-                        <circle cx="315" cy="12" r="1.5" fill="white"/>
+                    <pattern id="ornamento-linea-gallery-top" x="0" y="0" width="200" height="48" patternUnits="userSpaceOnUse">
+                      <svg viewBox="0 0 600 48" width="200" height="48">
+                        <path d="M20,24 Q140,20 260,24 Q140,28 20,24 Z" fill="white"/>
+                        <path d="M580,24 Q460,20 340,24 Q460,28 580,24 Z" fill="white"/>
+                        <circle cx="285" cy="24" r="2.5" fill="white"/>
+                        <circle cx="300" cy="24" r="3" fill="white"/>
+                        <circle cx="315" cy="24" r="2.5" fill="white"/>
                       </svg>
                     </pattern>
                   </defs>
-                  <rect width="100%" height="24" fill="url(#ornamento-linea-gallery-top)" />
+                  <rect width="100%" height="48" fill="url(#ornamento-linea-gallery-top)" />
                 </svg>
-                <div class="gallery-container" style="padding: 0.25rem 0 !important; margin: 0 !important;">
+                <div class="gallery-container">
                     <div class="gallery-ornament" aria-hidden="true" style="margin-bottom: 5px !important; padding: 0 !important;">
-<svg id="ornamento-animado" viewBox="0 0 1200 200" style="width:100%;height:80px;display:block" aria-hidden="true" role="presentation">
+<svg id="ornamento-animado" viewBox="0 0 1200 200" style="width:100%;height:160px;display:block" aria-hidden="true" role="presentation">
   <defs>
     <style>
       #ornamento-animado .stroke { --ornament-color: #ffffff; --ornament-stroke: 2; stroke: var(--ornament-color); fill: none; stroke-width: var(--ornament-stroke); stroke-linecap: round; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
@@ -394,20 +394,20 @@
   </g>
 </svg>
                     </div>
-                    <h2 class="section-title" style="margin: 0.2rem 0 0.1rem 0 !important; padding: 0 !important;">Retratos de Nuestro Amor</h2>
-                    <p class="section-subtitle" style="margin: 0 0 0.3rem 0 !important; padding: 0 !important;">Un minuto, un segundo, un instante que queda en la eternidad</p>
+                    <h2 class="section-title">Retratos de Nuestro Amor</h2>
+                    <p class="section-subtitle">Un minuto, un segundo, un instante que queda en la eternidad</p>
                     
-                    <div class="animated-camera" title="Galería de fotos" style="margin: 0.1rem 0; text-align: center;">
+                    <div class="animated-camera" title="Galería de fotos">
                         <lord-icon
                             src="https://cdn.lordicon.com/wsaaegar.json"
                             trigger="loop"
                             colors="primary:#ffffff,secondary:#ffffff"
-                            style="width:100px;height:100px">
+                            style="width:300px;height:300px">
                         </lord-icon>
                     </div>
 
                     <!-- Carrusel -->
-                    <div class="carousel-container" style="margin: 0 auto 0.3rem !important; padding: 0 !important;">
+                    <div class="carousel-container">
                         <button class="carousel-btn carousel-prev" id="prevBtn">❮</button>
                         <div class="carousel-track-container">
                             <div class="carousel-track" id="carouselTrack">
@@ -453,23 +453,23 @@
                         <button class="carousel-btn carousel-next" id="nextBtn">❯</button>
                     </div>
 
-                    <div class="carousel-counter" style="margin: 0.2rem 0 !important; padding: 0 !important;">
+                    <div class="carousel-counter">
                         <span id="currentSlide">1</span> / <span id="totalSlides">12</span> fotos
                     </div>
                 </div>
-                <svg class="gallery-border bottom" width="100%" height="24" xmlns="http://www.w3.org/2000/svg">
+                <svg class="gallery-border bottom" width="100%" height="48" xmlns="http://www.w3.org/2000/svg">
                   <defs>
-                    <pattern id="ornamento-linea-gallery-bottom" x="0" y="0" width="200" height="24" patternUnits="userSpaceOnUse">
-                      <svg viewBox="0 0 600 24" width="200" height="24">
-                        <path d="M20,12 Q140,10 260,12 Q140,14 20,12 Z" fill="white"/>
-                        <path d="M580,12 Q460,10 340,12 Q460,14 580,12 Z" fill="white"/>
-                        <circle cx="285" cy="12" r="1.5" fill="white"/>
-                        <circle cx="300" cy="12" r="2" fill="white"/>
-                        <circle cx="315" cy="12" r="1.5" fill="white"/>
+                    <pattern id="ornamento-linea-gallery-bottom" x="0" y="0" width="200" height="48" patternUnits="userSpaceOnUse">
+                      <svg viewBox="0 0 600 48" width="200" height="24">
+                        <path d="M20,24 Q140,20 260,24 Q140,28 20,24 Z" fill="white"/>
+                        <path d="M580,24 Q460,20 340,24 Q460,28 580,24 Z" fill="white"/>
+                        <circle cx="285" cy="24" r="2.5" fill="white"/>
+                        <circle cx="300" cy="24" r="3" fill="white"/>
+                        <circle cx="315" cy="24" r="2.5" fill="white"/>
                       </svg>
                     </pattern>
                   </defs>
-                  <rect width="100%" height="36" fill="url(#ornamento-linea-gallery-bottom)" />
+                  <rect width="100%" height="48" fill="url(#ornamento-linea-gallery-bottom)" />
                 </svg>
             </section>
 
