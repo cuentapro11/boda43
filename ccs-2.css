@@ -441,7 +441,78 @@ body {
 
 /* Reducir altura de la sección de galería en un 40% */
 .gallery-section {
-    padding: 2.4rem 1rem; /* Reducido de 4rem a 2.4rem (40% menos) */
+    padding: 2.4rem 1rem !important; /* Reducido de 4rem a 2.4rem (40% menos) */
+    min-height: auto !important;
+    max-height: 60vh !important; /* Limitar altura máxima */
+    overflow: hidden !important;
+}
+
+/* Forzar reducción de altura en todos los elementos de la galería */
+.gallery-section * {
+    box-sizing: border-box;
+}
+
+/* Reducir todos los márgenes y padding de elementos internos */
+.gallery-section > * {
+    margin-top: 0.3rem !important;
+    margin-bottom: 0.3rem !important;
+}
+
+.gallery-section .gallery-container {
+    padding: 0.5rem 0 !important;
+}
+
+.gallery-section .gallery-container > * {
+    margin-top: 0.2rem !important;
+    margin-bottom: 0.2rem !important;
+}
+
+.gallery-section .section-title {
+    margin-top: 0.3rem !important;
+    margin-bottom: 0.15rem !important;
+    padding: 0 !important;
+}
+
+.gallery-section .section-subtitle {
+    margin-bottom: 0.45rem !important;
+    padding: 0 !important;
+}
+
+.gallery-section .animated-camera {
+    margin-bottom: 0.6rem !important;
+    padding: 0 !important;
+}
+
+.gallery-section .carousel-container {
+    margin: 0 auto 0.45rem !important;
+    padding: 0 !important;
+}
+
+.gallery-section .gallery-ornament {
+    margin-bottom: 5px !important;
+    padding: 0 !important;
+}
+
+/* Reducir tamaño de la cámara animada */
+.gallery-section .animated-camera {
+    transform: scale(0.8) !important;
+    margin-bottom: 0.6rem !important;
+}
+
+/* Reducir altura del contador del carrusel */
+.gallery-section .carousel-counter {
+    margin-top: 0.3rem !important;
+    margin-bottom: 0.3rem !important;
+    padding: 0 !important;
+}
+
+/* Reducir altura de los bordes decorativos SVG */
+.gallery-section .gallery-border {
+    height: 36px !important; /* Reducido de 60px a 36px (40% menos) */
+}
+
+.gallery-section .gallery-border svg {
+    height: 36px !important;
 }
 
 .gallery-section,
@@ -1333,6 +1404,7 @@ body {
   position: relative;
   border: 4px solid #ffffff; /* contrast with gold background */
   box-shadow: 0 0 0 6px rgba(255,255,255,0.15) inset;
+  padding: 1.5rem 0 !important; /* Reducido de 2.5rem a 1.5rem (40% menos) */
 }
 .gallery-section.section-block::before,
 .gallery-section.section-block::after {
