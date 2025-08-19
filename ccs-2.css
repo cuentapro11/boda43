@@ -439,80 +439,61 @@ body {
     padding: 4rem 1rem;
 }
 
-/* Reducir altura de la sección de galería en un 40% */
+/* Reducir altura de la sección de galería solo un 20% */
 .gallery-section {
-    padding: 2.4rem 1rem !important; /* Reducido de 4rem a 2.4rem (40% menos) */
+    padding: 3.2rem 1rem !important; /* Reducido de 4rem a 3.2rem (20% menos) */
     min-height: auto !important;
-    max-height: 60vh !important; /* Limitar altura máxima */
-    overflow: hidden !important;
+    max-height: 80vh !important; /* Permitir más altura para el contenido */
+    overflow: visible !important; /* Mostrar todo el contenido */
 }
 
-/* Forzar reducción de altura en todos los elementos de la galería */
-.gallery-section * {
-    box-sizing: border-box;
-}
-
-/* Reducir todos los márgenes y padding de elementos internos */
-.gallery-section > * {
-    margin-top: 0.3rem !important;
-    margin-bottom: 0.3rem !important;
+.gallery-section.section-block {
+    padding: 2rem 0 !important; /* Reducido de 2.5rem a 2rem (20% menos) */
+    margin: 0 !important;
 }
 
 .gallery-section .gallery-container {
-    padding: 0.5rem 0 !important;
-}
-
-.gallery-section .gallery-container > * {
-    margin-top: 0.2rem !important;
-    margin-bottom: 0.2rem !important;
+    padding: 0.8rem 0 !important; /* Reducido de 1rem a 0.8rem (20% menos) */
+    margin: 0 !important;
 }
 
 .gallery-section .section-title {
-    margin-top: 0.3rem !important;
-    margin-bottom: 0.15rem !important;
+    margin: 0.4rem 0 0.2rem 0 !important; /* Reducido de 0.5rem/0.25rem a 0.4rem/0.2rem (20% menos) */
     padding: 0 !important;
 }
 
 .gallery-section .section-subtitle {
-    margin-bottom: 0.45rem !important;
+    margin: 0 0 0.6rem 0 !important; /* Reducido de 0.75rem a 0.6rem (20% menos) */
     padding: 0 !important;
 }
 
 .gallery-section .animated-camera {
-    margin-bottom: 0.6rem !important;
+    margin: 0.8rem 0 !important; /* Reducido de 1rem a 0.8rem (20% menos) */
     padding: 0 !important;
+    transform: none !important; /* Sin escalado, tamaño original */
 }
 
 .gallery-section .carousel-container {
-    margin: 0 auto 0.45rem !important;
+    margin: 0 auto 0.6rem !important; /* Reducido de 0.75rem a 0.6rem (20% menos) */
+    padding: 0 !important;
+}
+
+.gallery-section .carousel-counter {
+    margin: 0.4rem 0 !important; /* Reducido de 0.5rem a 0.4rem (20% menos) */
     padding: 0 !important;
 }
 
 .gallery-section .gallery-ornament {
-    margin-bottom: 5px !important;
+    margin-bottom: 6px !important; /* Reducido de 8px a 6px (20% menos) */
     padding: 0 !important;
 }
 
-/* Reducir tamaño de la cámara animada */
-.gallery-section .animated-camera {
-    transform: scale(0.8) !important;
-    margin-bottom: 0.6rem !important;
-}
-
-/* Reducir altura del contador del carrusel */
-.gallery-section .carousel-counter {
-    margin-top: 0.3rem !important;
-    margin-bottom: 0.3rem !important;
-    padding: 0 !important;
-}
-
-/* Reducir altura de los bordes decorativos SVG */
 .gallery-section .gallery-border {
-    height: 36px !important; /* Reducido de 60px a 36px (40% menos) */
+    height: 48px !important; /* Reducido de 60px a 48px (20% menos) */
 }
 
 .gallery-section .gallery-border svg {
-    height: 36px !important;
+    height: 48px !important;
 }
 
 .gallery-section,
@@ -1799,11 +1780,11 @@ html, body { overflow-x: hidden; }
 	.events-section .event-icon lord-icon { width: 90px !important; height: 90px !important; }
 }
 
-/* Reducir alto visual de la galería en móviles (sin alterar tamaño de imágenes) */
+/* Reducir alto visual de la galería en móviles solo un 20% */
 @media (max-width: 768px) {
-	.gallery-section { padding: 1.2rem 0.75rem; } /* Reducido de 2rem a 1.2rem (40% menos) */
-	.gallery-section .section-subtitle { margin-bottom: 0.9rem; } /* Reducido de 1.5rem a 0.9rem */
-	.gallery-section .carousel-container { margin: 0 auto 0.6rem; } /* Reducido de 1rem a 0.6rem */
+	.gallery-section { padding: 1.6rem 0.75rem; } /* Reducido de 2rem a 1.6rem (20% menos) */
+	.gallery-section .section-subtitle { margin-bottom: 1.2rem; } /* Reducido de 1.5rem a 1.2rem (20% menos) */
+	.gallery-section .carousel-container { margin: 0 auto 0.8rem; } /* Reducido de 1rem a 0.8rem (20% menos) */
 }
 
 .decorative-line {
@@ -1890,10 +1871,7 @@ html, body { overflow-x: hidden; }
 @media (max-width: 768px) { .carousel-item { height: 400px; } }
 @media (max-width: 480px) { .carousel-item { height: 400px; } }
 
-/* Compactar la sección de galería sin escalar las imágenes */
-.gallery-section.section-block { padding: 1.5rem 0; } /* Reducido de 2.5rem a 1.5rem (40% menos) */
-.gallery-section .section-title { margin-top: 0.15rem; margin-bottom: 0.15rem; } /* Reducido de 0.25rem a 0.15rem */
-.gallery-section .section-subtitle { margin-bottom: 0.45rem; } /* Reducido de 0.75rem a 0.45rem */
+/* Reglas de galería manejadas en la sección principal */
 
 /* Subrayado SVG para "Ceremonia" y "Celebración" (blanco, largo y cercano al título) */
 .events-section .event-title-underline {
@@ -1910,8 +1888,7 @@ html, body { overflow-x: hidden; }
 	margin: 0 auto;
 }
 
-/* Ornamento animado de galería: espacio sutil debajo */
-.gallery-ornament { margin-bottom: 5px; } /* Reducido de 8px a 5px (40% menos) */
+/* Ornamento animado de galería: espacio manejado en la sección principal */
 
 /* Borde decorativo más pequeño (repetición de raya-3puntos-raya) */
 .decorative-line.small {
@@ -1980,8 +1957,7 @@ html, body { overflow-x: hidden; }
 	margin: 0 auto;
 }
 
-/* Ornamento animado de galería: espacio sutil debajo */
-.gallery-ornament { margin-bottom: 5px; } /* Reducido de 8px a 5px (40% menos) */
+/* Ornamento animado de galería: espacio manejado en la sección principal */
 
 /* Borde decorativo más pequeño (repetición de raya-3puntos-raya) */
 .decorative-line.small {
