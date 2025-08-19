@@ -1,0 +1,45 @@
+                <div class="gallery-container" style="display: flex; flex-direction: column; gap: 0.5rem; padding: 0.5rem 0;">
+                    <div class="gallery-ornament" aria-hidden="true">
+<svg id="ornamento-animado" viewBox="0 0 1200 200" style="width:100%;height:160px;display:block" aria-hidden="true" role="presentation">
+  <defs>
+    <style>
+      #ornamento-animado .stroke { --ornament-color: #ffffff; --ornament-stroke: 2; stroke: var(--ornament-color); fill: none; stroke-width: var(--ornament-stroke); stroke-linecap: round; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
+      #ornamento-animado .draw { stroke-dasharray: 100; stroke-dashoffset: 100; opacity: 0; animation: draw 2.2s ease-in-out var(--delay, 0s) infinite; }
+      @keyframes draw { 0% { stroke-dashoffset: 100; opacity: 0; } 15% { opacity: 1; } 100% { stroke-dashoffset: 0; opacity: 1; } }
+    </style>
+  </defs>
+  <g class="stroke">
+    <line class="draw" pathLength="100" style="--delay: 0s" x1="150" y1="100" x2="500" y2="100"/>
+    <line class="draw" pathLength="100" style="--delay: 0.1s" x1="700" y1="100" x2="1050" y2="100"/>
+    <g id="end-ornament-left">
+      <polygon class="draw" pathLength="100" style="--delay: 0.25s" points="90,100 120,85 150,100 120,115 90,100"/>
+      <path class="draw" pathLength="100" style="--delay: 0.35s" d="M90,100 C70,85 60,85 50,100 C60,115 70,115 90,100 Z"/>
+      <circle class="draw" pathLength="100" style="--delay: 0.45s" cx="65" cy="100" r="4"/>
+    </g>
+    <g transform="translate(1200,0) scale(-1,1)">
+      <use href="#end-ornament-left"/>
+    </g>
+    <path pathLength="100" d="M600,100 C640,60 700,60 740,100 C700,140 640,140 600,100"/>
+    <path pathLength="100" d="M600,100 C560,60 500,60 460,100 C500,140 560,140 600,100"/>
+    <path class="draw" pathLength="100" style="--delay: 0.9s" d="M520,100 C535,92 552,92 560,100 C552,108 535,108 520,100 Z"/>
+    <path class="draw" pathLength="100" style="--delay: 1.0s" d="M680,100 C665,92 648,92 640,100 C648,108 665,108 680,100 Z"/>
+    <line class="draw" pathLength="100" style="--delay: 1.15s" x1="590" y1="86" x2="620" y2="74"/>
+    <line class="draw" pathLength="100" style="--delay: 1.25s" x1="586" y1="92" x2="616" y2="80"/>
+    <line class="draw" pathLength="100" style="--delay: 1.35s" x1="582" y1="98" x2="612" y2="86"/>
+  </g>
+</svg>
+                    </div>
+                <svg class="gallery-border bottom" width="100%" height="48" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <pattern id="ornamento-linea-gallery-bottom" x="0" y="0" width="200" height="48" patternUnits="userSpaceOnUse">
+                      <svg viewBox="0 0 600 48" width="200" height="48">
+                        <path d="M20,24 Q140,20 260,24 Q140,28 20,24 Z" fill="white"/>
+                        <path d="M580,24 Q460,20 340,24 Q460,28 580,24 Z" fill="white"/>
+                        <circle cx="285" cy="24" r="2.5" fill="white"/>
+                        <circle cx="300" cy="24" r="3" fill="white"/>
+                        <circle cx="315" cy="24" r="2.5" fill="white"/>
+                      </svg>
+                    </pattern>
+                  </defs>
+                  <rect width="100%" height="48" fill="url(#ornamento-linea-gallery-bottom)" />
+                </svg>

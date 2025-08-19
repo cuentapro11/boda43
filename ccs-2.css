@@ -1016,7 +1016,7 @@ body {
 .countdown-heart svg * { stroke: #ffffff; fill: #ffffff; }
 
 /* Galería: un poco más de espacio para que entre el contenido */
-.gallery-section { padding: 2rem 1rem; }
+.gallery-section { padding: 2.2rem 1rem; }
 
 /* Events: vertical cards aligned horizontally, gold gradient */
 .events-section { background-color: #ffffff; }
@@ -1804,7 +1804,7 @@ html, body { overflow-x: hidden; }
 
 /* Galería en móviles: un poco más grande y bordes visibles */
 @media (max-width: 768px) {
-	.gallery-section { padding: 2rem 0.75rem; }
+	.gallery-section { padding: 2.2rem 0.75rem; }
 	.gallery-section .section-subtitle { margin-bottom: 1rem; }
 	.gallery-section .carousel-container { margin: 0 auto 0.8rem; }
 }
