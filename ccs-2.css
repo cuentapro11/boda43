@@ -445,6 +445,8 @@ body {
     min-height: auto !important;
     max-height: 80vh !important; /* Permitir más altura para el contenido */
     overflow: visible !important; /* Mostrar todo el contenido */
+    height: auto !important;
+    box-sizing: border-box !important;
 }
 
 .gallery-section.section-block {
@@ -494,6 +496,26 @@ body {
 
 .gallery-section .gallery-border svg {
     height: 48px !important;
+}
+
+/* Reglas adicionales para forzar la reducción de altura */
+body .gallery-section,
+html .gallery-section,
+.gallery-section[class*="gallery-section"] {
+    padding: 3.2rem 1rem !important;
+    margin: 0 !important;
+    height: auto !important;
+    min-height: auto !important;
+    max-height: 80vh !important;
+}
+
+/* Forzar que todos los elementos internos respeten la altura */
+.gallery-section *,
+.gallery-section > *,
+.gallery-section .gallery-container * {
+    box-sizing: border-box !important;
+    margin-top: 0.3rem !important;
+    margin-bottom: 0.3rem !important;
 }
 
 .gallery-section,
@@ -1385,7 +1407,7 @@ body {
   position: relative;
   border: 4px solid #ffffff; /* contrast with gold background */
   box-shadow: 0 0 0 6px rgba(255,255,255,0.15) inset;
-  padding: 1.5rem 0 !important; /* Reducido de 2.5rem a 1.5rem (40% menos) */
+  padding: 2rem 0 !important; /* Reducido de 2.5rem a 2rem (20% menos) */
 }
 .gallery-section.section-block::before,
 .gallery-section.section-block::after {

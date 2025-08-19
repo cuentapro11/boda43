@@ -81,6 +81,61 @@
              height: 400px !important; /* Tamaño original */
              object-fit: cover !important;
          }
+         
+         /* Reglas adicionales para forzar la reducción de altura */
+         body .gallery-section,
+         html .gallery-section,
+         .gallery-section[class*="gallery-section"] {
+             padding: 3.2rem 1rem !important;
+             margin: 0 !important;
+             height: auto !important;
+             min-height: auto !important;
+             max-height: 80vh !important;
+         }
+         
+         /* Forzar que todos los elementos internos respeten la altura */
+         .gallery-section *,
+         .gallery-section > *,
+         .gallery-section .gallery-container * {
+             box-sizing: border-box !important;
+             margin-top: 0.3rem !important;
+             margin-bottom: 0.3rem !important;
+         }
+         
+         /* Regla final para asegurar que se aplique */
+         #gallery-section,
+         .gallery-section.section-block,
+         section.gallery-section {
+             padding: 3.2rem 1rem !important;
+             margin: 0 !important;
+             height: auto !important;
+             min-height: auto !important;
+             max-height: 80vh !important;
+             overflow: visible !important;
+         }
+         
+         /* Regla específica para el ID de la galería */
+         #gallery-section {
+             padding: 3.2rem 1rem !important;
+             margin: 0 !important;
+             height: auto !important;
+             min-height: auto !important;
+             max-height: 80vh !important;
+             overflow: visible !important;
+             display: block !important;
+         }
+         
+         /* Forzar que el ID tenga prioridad absoluta */
+         body #gallery-section,
+         html #gallery-section {
+             padding: 3.2rem 1rem !important;
+             margin: 0 !important;
+             height: auto !important;
+             min-height: auto !important;
+             max-height: 80vh !important;
+             overflow: visible !important;
+             display: block !important;
+         }
      </style>
 </head>
 <body>
@@ -348,7 +403,7 @@
             </section>
 
             <!-- Photo Gallery -->
-            <section class="gallery-section section-block">
+            <section id="gallery-section" class="gallery-section section-block" style="padding: 3.2rem 1rem !important; margin: 0 !important; height: auto !important; min-height: auto !important; max-height: 80vh !important; overflow: visible !important; display: block !important;">
                 <svg class="gallery-border top" width="100%" height="48" xmlns="http://www.w3.org/2000/svg">
                   <defs>
                     <pattern id="ornamento-linea-gallery-top" x="0" y="0" width="200" height="48" patternUnits="userSpaceOnUse">
