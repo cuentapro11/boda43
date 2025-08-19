@@ -1015,8 +1015,8 @@ body {
 .countdown-heart svg { width: 28px; height: 28px; }
 .countdown-heart svg * { stroke: #ffffff; fill: #ffffff; }
 
-/* Galería: reducir altura visual sin afectar tamaños internos */
-.gallery-section { padding: 1.5rem 0.75rem; }
+/* Galería: un poco más de espacio para que entre el contenido */
+.gallery-section { padding: 2rem 1rem; }
 
 /* Events: vertical cards aligned horizontally, gold gradient */
 .events-section { background-color: #ffffff; }
@@ -1802,11 +1802,11 @@ html, body { overflow-x: hidden; }
 	.events-section .event-icon lord-icon { width: 90px !important; height: 90px !important; }
 }
 
-/* Reducir alto visual de la galería en móviles solo un 20% */
+/* Galería en móviles: un poco más grande y bordes visibles */
 @media (max-width: 768px) {
-	.gallery-section { padding: 1.6rem 0.75rem; } /* Reducido de 2rem a 1.6rem (20% menos) */
-	.gallery-section .section-subtitle { margin-bottom: 1.2rem; } /* Reducido de 1.5rem a 1.2rem (20% menos) */
-	.gallery-section .carousel-container { margin: 0 auto 0.8rem; } /* Reducido de 1rem a 0.8rem (20% menos) */
+	.gallery-section { padding: 2rem 0.75rem; }
+	.gallery-section .section-subtitle { margin-bottom: 1rem; }
+	.gallery-section .carousel-container { margin: 0 auto 0.8rem; }
 }
 
 .decorative-line {

@@ -12,11 +12,11 @@
      <style>
          /* Reorganizar completamente la sección de galería */
          #gallery-section {
-             padding: 2rem 1rem !important;
+             padding: 2.4rem 1rem !important; /* un poco más grande */
              margin: 0 !important;
              height: auto !important;
              min-height: auto !important;
-             max-height: 70vh !important;
+             max-height: none !important; /* permitir que entre todo */
              overflow: visible !important;
          }
          
@@ -24,177 +24,75 @@
          #gallery-section .gallery-container {
              display: flex !important;
              flex-direction: column !important;
-             gap: 0.4rem !important;
-             padding: 0.3rem 0 !important;
+             gap: 0.5rem !important; /* más respiro */
+             padding: 0.5rem 0 !important;
              align-items: center !important;
          }
          
-         /* Título y subtítulo comprimidos */
+         /* Título y subtítulo */
          #gallery-section .section-title {
-             margin: 0.2rem 0 !important;
+             margin: 0.35rem 0 0.25rem 0 !important;
              padding: 0 !important;
-             font-size: 2.5rem !important;
-             line-height: 1.1 !important;
+             font-size: 2.75rem !important;
+             line-height: 1.15 !important;
          }
          
          #gallery-section .section-subtitle {
-             margin: 0 0 0.2rem 0 !important;
+             margin: 0 0 0.5rem 0 !important;
              padding: 0 !important;
-             font-size: 0.9rem !important;
-             line-height: 1.2 !important;
+             font-size: 1rem !important;
+             line-height: 1.25 !important;
          }
          
-         /* Cámara animada comprimida */
+         /* Cámara animada */
          #gallery-section .animated-camera {
-             margin: 0.3rem 0 !important;
+             margin: 0.6rem 0 !important;
              padding: 0 !important;
          }
          
-         /* Carrusel comprimido */
+         /* Carrusel un poco más alto */
          #gallery-section .carousel-container {
-             margin: 0.3rem auto !important;
+             margin: 0.6rem auto !important;
              padding: 0 !important;
          }
-         
-         /* Imágenes del carrusel comprimidas */
          #gallery-section .carousel-item {
-             height: 300px !important;
+             height: 380px !important;
          }
-         
          #gallery-section .carousel-item img {
-             height: 300px !important;
+             height: 380px !important;
              object-fit: cover !important;
          }
-         
-         /* Contador comprimido */
-         #gallery-section .carousel-counter {
-             margin: 0.2rem 0 !important;
-             padding: 0 !important;
-             font-size: 0.9rem !important;
-         }
-         
-         /* Bordes decorativos comprimidos */
-         #gallery-section .gallery-border {
-             height: 36px !important;
-         }
-         
-         #gallery-section .gallery-border svg {
-             height: 36px !important;
-         }
-         
-         /* Reglas adicionales para asegurar que se apliquen */
-         body #gallery-section,
-         html #gallery-section {
-             padding: 2rem 1rem !important;
-             margin: 0 !important;
-             height: auto !important;
-             min-height: auto !important;
-             max-height: 70vh !important;
-             overflow: visible !important;
-         }
-         
-         /* Reorganizar y comprimir todos los elementos internos para que quepan */
-         .gallery-section *,
-         .gallery-section > *,
-         .gallery-section .gallery-container * {
-             box-sizing: border-box !important;
-             margin: 0.2rem 0 !important;
-             padding: 0.1rem 0 !important;
-         }
-         
-         /* Comprimir específicamente el título y subtítulo */
-         .gallery-section .section-title {
-             margin: 0.2rem 0 0.1rem 0 !important;
-             padding: 0.1rem 0 !important;
-             line-height: 1.1 !important;
-         }
-         
-         .gallery-section .section-subtitle {
-             margin: 0 0 0.3rem 0 !important;
-             padding: 0.1rem 0 !important;
-             line-height: 1.2 !important;
-         }
-         
-         /* Comprimir la cámara animada */
-         .gallery-section .animated-camera {
-             margin: 0.4rem 0 !important;
-             padding: 0.1rem 0 !important;
-             transform: scale(0.9) !important; /* Reducir ligeramente para que quepa */
-         }
-         
-         /* Comprimir el carrusel */
-         .gallery-section .carousel-container {
-             margin: 0 auto 0.3rem !important;
-             padding: 0.1rem 0 !important;
-         }
-         
-         /* Comprimir el contador */
-         .gallery-section .carousel-counter {
-             margin: 0.2rem 0 !important;
-             padding: 0.1rem 0 !important;
-         }
-         
-         /* Comprimir el ornamento */
-         .gallery-section .gallery-ornament {
-             margin-bottom: 3px !important;
-             padding: 0.1rem 0 !important;
-         }
-         
-         /* Regla final para asegurar que se aplique */
-         #gallery-section,
-         .gallery-section.section-block,
-         section.gallery-section {
-             padding: 3.2rem 1rem !important;
-             margin: 0 !important;
-             height: auto !important;
-             min-height: auto !important;
-             max-height: 80vh !important;
-             overflow: visible !important;
-         }
-         
-         /* Regla específica para el ID de la galería */
-         #gallery-section {
-             padding: 3.2rem 1rem !important;
-             margin: 0 !important;
-             height: auto !important;
-             min-height: auto !important;
-             max-height: 80vh !important;
-             overflow: visible !important;
-             display: block !important;
-         }
-         
-         /* Asegurar que todo el contenido se ajuste perfectamente */
-         #gallery-section .gallery-container {
-             display: flex !important;
-             flex-direction: column !important;
-             justify-content: space-between !important;
-             align-items: center !important;
-             gap: 0.3rem !important;
-             padding: 0.5rem 0 !important;
-         }
-         
-         /* Comprimir el espacio entre elementos */
-         #gallery-section > * {
-             margin: 0.15rem 0 !important;
-             padding: 0.1rem 0 !important;
-         }
-         
-         /* Asegurar que el carrusel se ajuste */
          #gallery-section .carousel-track-container {
-             max-height: 350px !important;
-             overflow: hidden !important;
+             max-height: none !important;
+             overflow: visible !important;
          }
          
-         /* Forzar que el ID tenga prioridad absoluta */
-         body #gallery-section,
-         html #gallery-section {
-             padding: 3.2rem 1rem !important;
-             margin: 0 !important;
-             height: auto !important;
-             min-height: auto !important;
-             max-height: 80vh !important;
-             overflow: visible !important;
+         /* Contador */
+         #gallery-section .carousel-counter {
+             margin: 0.4rem 0 !important;
+             padding: 0 !important;
+             font-size: 1rem !important;
+         }
+         
+         /* Bordes decorativos visibles (superior e inferior) */
+         #gallery-section .gallery-border { height: 48px !important; }
+         #gallery-section .gallery-border svg { height: 48px !important; }
+         
+         /* Ornamento animado visible y de altura suficiente */
+         #gallery-section .gallery-ornament svg {
+             height: 160px !important;
+             max-height: 160px !important;
              display: block !important;
+         }
+         
+         /* Ajustes móviles: un poco más grande para que entre todo */
+         @media (max-width: 768px) {
+            #gallery-section { padding: 2rem 0.75rem !important; }
+            #gallery-section .section-title { font-size: 2.25rem !important; }
+            #gallery-section .animated-camera { margin: 0.5rem 0 !important; }
+            #gallery-section .carousel-item, #gallery-section .carousel-item img { height: 340px !important; }
+            #gallery-section .gallery-border, #gallery-section .gallery-border svg { height: 48px !important; }
+            #gallery-section .gallery-ornament svg { height: 140px !important; max-height: 140px !important; }
          }
      </style>
 </head>
@@ -463,8 +361,8 @@
             </section>
 
             <!-- Photo Gallery -->
-            <section id="gallery-section" class="gallery-section section-block" style="padding: 3.2rem 1rem !important; margin: 0 !important; height: auto !important; min-height: auto !important; max-height: 80vh !important; overflow: visible !important; display: block !important;">
-                <svg class="gallery-border top" width="100%" height="36" xmlns="http://www.w3.org/2000/svg">
+            <section id="gallery-section" class="gallery-section section-block" style="padding: 2.4rem 1rem !important; margin: 0 !important; height: auto !important; min-height: auto !important; max-height: none !important; overflow: visible !important; display: block !important;">
+                <svg class="gallery-border top" width="100%" height="48" xmlns="http://www.w3.org/2000/svg">
                   <defs>
                     <pattern id="ornamento-linea-gallery-top" x="0" y="0" width="200" height="36" patternUnits="userSpaceOnUse">
                       <svg viewBox="0 0 600 36" width="200" height="36">
@@ -476,17 +374,17 @@
                       </svg>
                     </pattern>
                   </defs>
-                  <rect width="100%" height="36" fill="url(#ornamento-linea-gallery-top)" />
+                  <rect width="100%" height="48" fill="url(#ornamento-linea-gallery-top)" />
                 </svg>
                 <div class="gallery-container" style="display: flex; flex-direction: column; gap: 0.5rem; padding: 0.5rem 0;">
                     <!-- Título y subtítulo comprimidos -->
-                    <div style="text-align: center; margin: 0.2rem 0;">
-                        <h2 class="section-title" style="margin: 0.2rem 0; font-size: 2.5rem;">Retratos de Nuestro Amor</h2>
-                        <p class="section-subtitle" style="margin: 0 0 0.3rem 0; font-size: 0.9rem;">Un minuto, un segundo, un instante que queda en la eternidad</p>
+                    <div style="text-align: center; margin: 0.35rem 0 0.25rem 0;">
+                        <h2 class="section-title" style="margin: 0.35rem 0 0.25rem 0; font-size: 2.75rem;">Retratos de Nuestro Amor</h2>
+                        <p class="section-subtitle" style="margin: 0 0 0.5rem 0; font-size: 1rem;">Un minuto, un segundo, un instante que queda en la eternidad</p>
                     </div>
                     
                     <!-- Cámara animada comprimida -->
-                    <div class="animated-camera" title="Galería de fotos" style="text-align: center; margin: 0.3rem 0;">
+                    <div class="animated-camera" title="Galería de fotos" style="text-align: center; margin: 0.6rem 0;">
                         <lord-icon
                             src="https://cdn.lordicon.com/wsaaegar.json"
                             trigger="loop"
@@ -496,45 +394,45 @@
                     </div>
 
                     <!-- Carrusel comprimido -->
-                    <div class="carousel-container" style="margin: 0.3rem auto;">
+                    <div class="carousel-container" style="margin: 0.6rem auto;">
                         <button class="carousel-btn carousel-prev" id="prevBtn">❮</button>
-                        <div class="carousel-track-container" style="max-height: 300px; overflow: hidden;">
+                        <div class="carousel-track-container" style="max-height: none; overflow: visible;">
                             <div class="carousel-track" id="carouselTrack">
-                                <div class="carousel-item" style="height: 300px;">
-                                    <img loading="lazy" src="https://images.unsplash.com/photo-1519741497674-611481863552?w=400&h=400&fit=crop&crop=center" alt="Pareja de novios en ceremonia" style="height: 300px; object-fit: cover;">
+                                <div class="carousel-item" style="height: 380px;">
+                                    <img loading="lazy" src="https://images.unsplash.com/photo-1519741497674-611481863552?w=400&h=400&fit=crop&crop=center" alt="Pareja de novios en ceremonia" style="height: 380px; object-fit: cover;">
                                 </div>
-                                <div class="carousel-item" style="height: 300px;">
-                                    <img loading="lazy" src="https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=400&h=400&fit=crop&crop=center" alt="Anillos de boda" style="height: 300px; object-fit: cover;">
+                                <div class="carousel-item" style="height: 380px;">
+                                    <img loading="lazy" src="https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=400&h=400&fit=crop&crop=center" alt="Anillos de boda" style="height: 380px; object-fit: cover;">
                                 </div>
-                                <div class="carousel-item" style="height: 300px;">
-                                    <img loading="lazy" src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=400&h=400&fit=crop&crop=center" alt="Pareja romántica en jardín" style="height: 300px; object-fit: cover;">
+                                <div class="carousel-item" style="height: 380px;">
+                                    <img loading="lazy" src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=400&h=400&fit=crop&crop=center" alt="Pareja romántica en jardín" style="height: 380px; object-fit: cover;">
                                 </div>
-                                <div class="carousel-item" style="height: 300px;">
-                                    <img loading="lazy" src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=400&h=400&fit=crop&crop=center" alt="Decoración de boda" style="height: 300px; object-fit: cover;">
+                                <div class="carousel-item" style="height: 380px;">
+                                    <img loading="lazy" src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=400&h=400&fit=crop&crop=center" alt="Decoración de boda" style="height: 380px; object-fit: cover;">
                                 </div>
-                                <div class="carousel-item" style="height: 300px;">
-                                    <img loading="lazy" src="https://images.unsplash.com/photo-1537633552985-df8429e8048b?w=400&h=400&fit=crop&crop=center" alt="Mesa de boda elegante" style="height: 300px; object-fit: cover;">
+                                <div class="carousel-item" style="height: 380px;">
+                                    <img loading="lazy" src="https://images.unsplash.com/photo-1537633552985-df8429e8048b?w=400&h=400&fit=crop&crop=center" alt="Mesa de boda elegante" style="height: 380px; object-fit: cover;">
                                 </div>
-                                <div class="carousel-item" style="height: 300px;">
-                                    <img loading="lazy" src="" alt="Pareja bailando" onerror="this.closest('.carousel-item').remove()" style="height: 300px; object-fit: cover;">
+                                <div class="carousel-item" style="height: 380px;">
+                                    <img loading="lazy" src="" alt="Pareja bailando" onerror="this.closest('.carousel-item').remove()" style="height: 380px; object-fit: cover;">
                                 </div>
-                                <div class="carousel-item" style="height: 300px;">
-                                    <img loading="lazy" src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=400&h=400&fit=crop&crop=center" alt="Vestido de novia elegante" style="height: 300px; object-fit: cover;">
+                                <div class="carousel-item" style="height: 380px;">
+                                    <img loading="lazy" src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=400&h=400&fit=crop&crop=center" alt="Vestido de novia elegante" style="height: 380px; object-fit: cover;">
                                 </div>
-                                <div class="carousel-item" style="height: 300px;">
-                                    <img loading="lazy" src="" alt="Flores de boda" onerror="this.closest('.carousel-item').remove()" style="height: 300px; object-fit: cover;">
+                                <div class="carousel-item" style="height: 380px;">
+                                    <img loading="lazy" src="" alt="Flores de boda" onerror="this.closest('.carousel-item').remove()" style="height: 380px; object-fit: cover;">
                                 </div>
-                                <div class="carousel-item" style="height: 300px;">
-                                    <img loading="lazy" src="https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?w=400&h=400&fit=crop&crop=center" alt="Manos con anillos de compromiso" style="height: 300px; object-fit: cover;">
+                                <div class="carousel-item" style="height: 380px;">
+                                    <img loading="lazy" src="https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?w=400&h=400&fit=crop&crop=center" alt="Manos con anillos de compromiso" style="height: 380px; object-fit: cover;">
                                 </div>
-                                <div class="carousel-item" style="height: 300px;">
-                                    <img loading="lazy" src="" alt="Ramo de novia hermoso" onerror="this.closest('.carousel-item').remove()" style="height: 300px; object-fit: cover;">
+                                <div class="carousel-item" style="height: 380px;">
+                                    <img loading="lazy" src="" alt="Ramo de novia hermoso" onerror="this.closest('.carousel-item').remove()" style="height: 380px; object-fit: cover;">
                                 </div>
-                                <div class="carousel-item" style="height: 300px;">
-                                    <img loading="lazy" src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?w=400&h=400&fit=crop&crop=center" alt="Pareja en la playa al atardecer" style="height: 300px; object-fit: cover;">
+                                <div class="carousel-item" style="height: 380px;">
+                                    <img loading="lazy" src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?w=400&h=400&fit=crop&crop=center" alt="Pareja en la playa al atardecer" style="height: 380px; object-fit: cover;">
                                 </div>
-                                <div class="carousel-item" style="height: 300px;">
-                                    <img loading="lazy" src="" alt="Detalles de boda elegantes" onerror="this.closest('.carousel-item').remove()" style="height: 300px; object-fit: cover;">
+                                <div class="carousel-item" style="height: 380px;">
+                                    <img loading="lazy" src="" alt="Detalles de boda elegantes" onerror="this.closest('.carousel-item').remove()" style="height: 380px; object-fit: cover;">
                                 </div>
                             </div>
                         </div>
@@ -543,11 +441,11 @@
                     </div>
 
                     <!-- Contador comprimido -->
-                    <div class="carousel-counter" style="text-align: center; margin: 0.2rem 0; font-size: 0.9rem;">
+                    <div class="carousel-counter" style="text-align: center; margin: 0.4rem 0; font-size: 1rem;">
                         <span id="currentSlide">1</span> / <span id="totalSlides">12</span> fotos
                     </div>
                 </div>
-                <svg class="gallery-border bottom" width="100%" height="36" xmlns="http://www.w3.org/2000/svg">
+                <svg class="gallery-border bottom" width="100%" height="48" xmlns="http://www.w3.org/2000/svg">
                   <defs>
                     <pattern id="ornamento-linea-gallery-bottom" x="0" y="0" width="200" height="36" patternUnits="userSpaceOnUse">
                       <svg viewBox="0 0 600 36" width="200" height="36">
@@ -559,7 +457,7 @@
                       </svg>
                     </pattern>
                   </defs>
-                  <rect width="100%" height="36" fill="url(#ornamento-linea-gallery-bottom)" />
+                  <rect width="100%" height="48" fill="url(#ornamento-linea-gallery-bottom)" />
                 </svg>
             </section>
 
