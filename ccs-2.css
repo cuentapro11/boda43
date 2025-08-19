@@ -439,6 +439,11 @@ body {
     padding: 4rem 1rem;
 }
 
+/* Reducir altura de la sección de galería en un 40% */
+.gallery-section {
+    padding: 2.4rem 1rem; /* Reducido de 4rem a 2.4rem (40% menos) */
+}
+
 .gallery-section,
 .gifts-section {
     background-color: hsl(var(--warm-white));
@@ -990,10 +995,10 @@ body {
   background: linear-gradient(180deg, var(--gold-main-light), var(--gold-main-dark));
   color: #ffffff;
 }
-.gallery-section .section-title { margin-top: 0.5rem; margin-bottom: 0.25rem; }
-.gallery-section .section-subtitle { margin-bottom: 0.75rem; }
-.gallery-section .animated-camera { margin-bottom: 1rem; }
-.gallery-section .carousel-container { margin: 0 auto 0.75rem; }
+.gallery-section .section-title { margin-top: 0.3rem; margin-bottom: 0.15rem; } /* Reducido de 0.5rem/0.25rem a 0.3rem/0.15rem (40% menos) */
+.gallery-section .section-subtitle { margin-bottom: 0.45rem; } /* Reducido de 0.75rem a 0.45rem (40% menos) */
+.gallery-section .animated-camera { margin-bottom: 0.6rem; } /* Reducido de 1rem a 0.6rem (40% menos) */
+.gallery-section .carousel-container { margin: 0 auto 0.45rem; } /* Reducido de 0.75rem a 0.45rem (40% menos) */
 .gallery-section .section-title { color: var(--text-gold); text-shadow: 0 1px 2px rgba(0,0,0,0.15); }
 .gallery-section .section-subtitle { color: #cccccc; }
 
@@ -1724,9 +1729,9 @@ html, body { overflow-x: hidden; }
 
 /* Reducir alto visual de la galería en móviles (sin alterar tamaño de imágenes) */
 @media (max-width: 768px) {
-	.gallery-section { padding: 2rem 0.75rem; }
-	.gallery-section .section-subtitle { margin-bottom: 1.5rem; }
-	.gallery-section .carousel-container { margin: 0 auto 1rem; }
+	.gallery-section { padding: 1.2rem 0.75rem; } /* Reducido de 2rem a 1.2rem (40% menos) */
+	.gallery-section .section-subtitle { margin-bottom: 0.9rem; } /* Reducido de 1.5rem a 0.9rem */
+	.gallery-section .carousel-container { margin: 0 auto 0.6rem; } /* Reducido de 1rem a 0.6rem */
 }
 
 .decorative-line {
@@ -1814,9 +1819,9 @@ html, body { overflow-x: hidden; }
 @media (max-width: 480px) { .carousel-item { height: 400px; } }
 
 /* Compactar la sección de galería sin escalar las imágenes */
-.gallery-section.section-block { padding: 2.5rem 0; }
-.gallery-section .section-title { margin-top: 0.25rem; margin-bottom: 0.25rem; }
-.gallery-section .section-subtitle { margin-bottom: 0.75rem; }
+.gallery-section.section-block { padding: 1.5rem 0; } /* Reducido de 2.5rem a 1.5rem (40% menos) */
+.gallery-section .section-title { margin-top: 0.15rem; margin-bottom: 0.15rem; } /* Reducido de 0.25rem a 0.15rem */
+.gallery-section .section-subtitle { margin-bottom: 0.45rem; } /* Reducido de 0.75rem a 0.45rem */
 
 /* Subrayado SVG para "Ceremonia" y "Celebración" (blanco, largo y cercano al título) */
 .events-section .event-title-underline {
@@ -1834,7 +1839,7 @@ html, body { overflow-x: hidden; }
 }
 
 /* Ornamento animado de galería: espacio sutil debajo */
-.gallery-ornament { margin-bottom: 8px; }
+.gallery-ornament { margin-bottom: 5px; } /* Reducido de 8px a 5px (40% menos) */
 
 /* Borde decorativo más pequeño (repetición de raya-3puntos-raya) */
 .decorative-line.small {
@@ -1904,7 +1909,7 @@ html, body { overflow-x: hidden; }
 }
 
 /* Ornamento animado de galería: espacio sutil debajo */
-.gallery-ornament { margin-bottom: 8px; }
+.gallery-ornament { margin-bottom: 5px; } /* Reducido de 8px a 5px (40% menos) */
 
 /* Borde decorativo más pequeño (repetición de raya-3puntos-raya) */
 .decorative-line.small {
