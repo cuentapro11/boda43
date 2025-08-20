@@ -2020,3 +2020,20 @@ html, body { overflow-x: hidden; }
 .gallery-section .carousel-container {
     margin-top: 0 !important; /* aseguramos que el carrusel no agregue espacio extra */
 }
+
+/* Ajustes solicitados: layout de contenedor, cámara y carrusel */
+.gallery-section .gallery-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery-section .animated-camera {
+    margin: 15px 0; /* ajusta arriba y abajo */
+    /* Si quieres centrarlo más exacto, puedes usar: */
+    /* margin-top: calc((altura del carrusel - altura del icono) / 2); */
+}
+
+.gallery-section .carousel-container {
+    margin-top: 0;
+}
