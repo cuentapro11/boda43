@@ -2068,30 +2068,3 @@ html, body { overflow-x: hidden; }
   }
   .gallery-section .carousel-track { gap: 0 !important; }
 }
-
-/* Móvil: 1 imagen por vista, centrada y completa (sin recortes) y separada con gap */
-@media (max-width: 768px) {
-  .gallery-section .carousel-container { margin-left: auto !important; margin-right: auto !important; }
-  .gallery-section .carousel-track { justify-content: center !important; gap: 16px !important; }
-  .gallery-section .carousel-item {
-    flex: 0 0 100% !important;
-    max-width: 100% !important;
-    height: auto !important;          /* anula alturas fijas previas */
-    min-height: 70vh !important;      /* ocupa alto de pantalla para centrar */
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    padding: 8px !important;          /* separación interior del borde */
-    box-sizing: border-box !important;
-  }
-  .gallery-section .carousel-item img {
-    width: auto !important;
-    height: auto !important;
-    max-width: calc(100% - 16px) !important;
-    max-height: calc(100% - 16px) !important;
-    object-fit: contain !important;   /* sin recorte, completa */
-    object-position: center center !important;
-    display: block !important;
-    margin: 0 auto !important;
-  }
-}
