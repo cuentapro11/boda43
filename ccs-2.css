@@ -1967,3 +1967,22 @@ html, body { overflow-x: hidden; }
   .gallery-section .section-subtitle { margin-bottom: 0.4rem; }
   .gallery-section .carousel-container { margin: 0 auto 0.4rem; }
 }
+
+/* === Galería: igualar alto a eventos y acomodar contenido dentro === */
+/* Alto objetivo ~600px (520px tarjetas + decoraciones) */
+.gallery-section.section-block {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* no recorta contenido clave: ajustamos interiores */
+}
+.gallery-section .gallery-container {
+  flex: 1 1 auto;
+}
+/* Bordes decorativos más compactos */
+/* Ornamento (infinito) dentro del espacio */
+/* Título/subtítulo compactos sin cambiar tamaños de fuente */
+/* Icono de cámara ajustado para caber */
+/* Carrusel: altura asignada para encajar dentro del alto objetivo */
+/* Contador compacto */
+@media (max-width: 768px) {
+}
