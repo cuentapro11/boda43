@@ -183,9 +183,8 @@ function initializeCarousel() {
     totalSlides = items.length;
 
     function getVisibleSlides() {
-        if (window.innerWidth <= 768) return 1;
-        if (window.innerWidth <= 1024) return 2;
-        return 3;
+        // Mostrar siempre una sola imagen completa, centrada y a pantalla completa del ancho
+        return 1;
     }
 
     let visibleSlides = getVisibleSlides();
@@ -229,8 +228,8 @@ function initializeCarousel() {
             visibleSlides = newVisible;
             maxIndex = Math.max(0, totalSlides - visibleSlides);
             currentSlide = Math.min(currentSlide, maxIndex);
-            updateCarousel(visibleSlides);
         }
+        updateCarousel(visibleSlides);
     });
 }
 

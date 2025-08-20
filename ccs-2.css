@@ -2068,3 +2068,10 @@ html, body { overflow-x: hidden; }
   }
   .gallery-section .carousel-track { gap: 0 !important; }
 }
+
+/* Carrusel 1 imagen por vista: ítem ocupa el 100% del ancho; centrado */
+.gallery-section .carousel-track { gap: 0 !important; }
+.gallery-section .carousel-item { flex: 0 0 100% !important; max-width: 100% !important; }
+.gallery-section .carousel-item img { width: 100% !important; height: auto !important; object-fit: cover; object-position: center; display: block; }
+/* Asegurar centrado del contenedor */
+.gallery-section .carousel-container { margin-left: auto !important; margin-right: auto !important; }
