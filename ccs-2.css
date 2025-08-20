@@ -2037,3 +2037,15 @@ html, body { overflow-x: hidden; }
 .gallery-section .carousel-container {
     margin-top: 0;
 }
+
+/* Carrusel: borde blanco visible en imágenes y centrado; 3 en desktop, 1 en móvil */
+.gallery-section .carousel-container { margin-left: auto !important; margin-right: auto !important; }
+.gallery-section .carousel-track { display: flex !important; justify-content: center !important; gap: 1rem !important; }
+/* Desktop: 3 simultáneamente */
+.gallery-section .carousel-item { flex: 0 0 calc(33.333% - 0.666rem) !important; max-width: calc(33.333% - 0.666rem) !important; }
+/* Imágenes con borde blanco y leve sombra */
+.gallery-section .carousel-item img { border: 4px solid #ffffff !important; border-radius: 6px !important; box-shadow: 0 6px 16px rgba(0,0,0,0.12) !important; }
+/* Móvil: 1 por vista, centrado */
+@media (max-width: 768px) {
+  .gallery-section .carousel-item { flex: 0 0 100% !important; max-width: 100% !important; }
+}
