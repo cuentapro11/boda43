@@ -2091,3 +2091,38 @@ html, body { overflow-x: hidden; }
     object-position: center center !important; 
   }
 }
+
+/* Mobile carousel: corregir centrado perfecto de imágenes */
+@media (max-width: 768px) {
+  .gallery-section .carousel-container { 
+    display: flex !important; 
+    justify-content: center !important; 
+    align-items: center !important; 
+  }
+  .gallery-section .carousel-track-container { 
+    padding-left: 16px !important; 
+    padding-right: 16px !important; 
+    display: flex !important; 
+    justify-content: center !important; 
+  }
+  .gallery-section .carousel-track { 
+    gap: 20px !important; 
+    justify-content: center !important; 
+    align-items: center !important; 
+  }
+  .gallery-section .carousel-item { 
+    flex: 0 0 100% !important; 
+    max-width: 100% !important; 
+    display: flex !important; 
+    align-items: center !important; 
+    justify-content: center !important; 
+    text-align: center !important; 
+  }
+  .gallery-section .carousel-item img { 
+    border-width: 2px !important; 
+    object-fit: contain !important; 
+    object-position: center center !important; 
+    margin: 0 auto !important; 
+    display: block !important; 
+  }
+}
