@@ -2000,3 +2000,14 @@ html, body { overflow-x: hidden; }
 
 
 /* Ajuste de espaciados solicitados (márgenes de título, subtítulo y contenedor) */
+
+/* Reset de padding/margen para compactar galería según solicitud */
+.gallery-section.section-block {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    margin: 0 !important;
+}
+.gallery-section.section-block * {
+    margin: 0;
+    padding: 0;
+}
