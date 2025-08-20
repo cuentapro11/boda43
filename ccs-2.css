@@ -2011,3 +2011,12 @@ html, body { overflow-x: hidden; }
     margin: 0;
     padding: 0;
 }
+
+/* Ajustes finos de espaciado: cámara y carrusel */
+.gallery-section .animated-camera {
+    margin-bottom: 10px !important; /* espacio controlado debajo del icono */
+}
+
+.gallery-section .carousel-container {
+    margin-top: 0 !important; /* aseguramos que el carrusel no agregue espacio extra */
+}
