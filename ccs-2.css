@@ -2126,3 +2126,23 @@ html, body { overflow-x: hidden; }
     display: block !important; 
   }
 }
+
+/* Mobile carousel: una imagen al 90% centrada perfectamente */
+@media (max-width: 768px) {
+  .gallery-section .carousel-track { 
+    gap: 0 !important; 
+  }
+  .gallery-section .carousel-item { 
+    flex: 0 0 100% !important; 
+    max-width: 100% !important; 
+    display: flex !important; 
+    align-items: center !important; 
+    justify-content: center !important; 
+  }
+  .gallery-section .carousel-item img { 
+    width: 90% !important; 
+    height: auto !important; 
+    object-fit: contain !important; 
+    object-position: center center !important; 
+  }
+}
