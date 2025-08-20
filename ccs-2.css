@@ -1991,3 +1991,9 @@ html, body { overflow-x: hidden; }
 /* restaurar tamaños originales (sin recortes) */
 @media (max-width: 768px) {
 }
+
+/* === Carrusel compacto (opción B): alturas levemente menores sin deformar === */
+/* Desktop */
+/* Móvil */
+@media (max-width: 768px) {
+}
