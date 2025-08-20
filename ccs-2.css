@@ -2126,3 +2126,18 @@ html, body { overflow-x: hidden; }
     display: block !important; 
   }
 }
+
+/* Mobile carousel: solo ajustes para botones funcionando, sin cambiar apariencia */
+@media (max-width: 768px) {
+  .gallery-section .carousel-track { 
+    gap: 0 !important; 
+  }
+  .gallery-section .carousel-item { 
+    flex: 0 0 100% !important; 
+    max-width: 100% !important; 
+  }
+  .gallery-section .carousel-item img { 
+    object-fit: contain !important; 
+    object-position: center center !important; 
+  }
+}
